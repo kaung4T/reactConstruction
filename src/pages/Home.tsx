@@ -6,6 +6,8 @@ import ItemHook from '../hooks/item'
 import ItemCompoent from '../component/item/item'
 import Auth from '../utils/auth'
 import { Form, useLocation, useNavigate } from 'react-router-dom'
+import GG from './gg'
+import SS from './SS'
 
 const {
   login,
@@ -46,6 +48,9 @@ const Home = () => {
     await logout()
     navigate(0)
   }
+
+  const ss = new GG('fffffffff')
+  console.log(ss.fun())
 
   return (
     <>
