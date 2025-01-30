@@ -1,7 +1,6 @@
 import React from 'react'
 
-abstract class SS {
-  
+abstract class Parent {
     public name: string | null
 
     constructor (name: string | null = null) {
@@ -9,4 +8,4 @@ abstract class SS {
     }
 }
 
-export default SS
+export default Parent

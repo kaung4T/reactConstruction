@@ -6,8 +6,8 @@ import ItemHook from '../hooks/item'
 import ItemCompoent from '../component/item/item'
 import Auth from '../utils/auth'
 import { Form, useLocation, useNavigate } from 'react-router-dom'
-import GG from './gg'
-import SS from './SS'
+import Child from './Child'
+import Parent from './Parent'
 
 const {
   login,
@@ -49,8 +49,9 @@ const Home = () => {
     navigate(0)
   }
 
-  const ss = new GG('fffffffff')
-  console.log(ss.fun())
+  const c = new Child('ewfpokkweofwekfwfe')
+
+  console.log(c.name)
 
   return (
     <>

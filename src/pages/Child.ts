@@ -1,18 +1,17 @@
 import React from 'react'
-import SS from './SS'
+import Parent from './Parent'
 
-class GG extends SS {
-  
-    // public name: string | null
+class Child extends Parent {
+    public name: string | null
 
     constructor (name: string | null = null) {
         super(name)
-        // this.name = name
+        this.name = name
     }
 
     fun () {
         return this.name
-    }
+    } 
 }
 
-export default GG
+export default Child
