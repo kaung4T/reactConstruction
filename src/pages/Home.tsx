@@ -8,6 +8,8 @@ import Auth from '../utils/auth'
 import { Form, useLocation, useNavigate } from 'react-router-dom'
 import Child from './Child'
 import Parent from './Parent'
+import { productSchema, productType } from '../zod/zod'
+import { z } from 'zod'
 
 const {
   login,
@@ -52,6 +54,15 @@ const Home = () => {
   const c = new Child('ewfpokkweofwekfwfe')
 
   console.log(c.name)
+
+  const product: productType = {
+    name: "lapto",
+    price: 400
+  }
+
+  console.log(product)
+
+  const gg = productSchema.safeParse(product)
 
   return (
     <>
